@@ -157,10 +157,9 @@ const getAnswer = () => {
   return ans;
 };
 const endQuiz = () => {
-  // console.log(document.getElementsByClassName("container"));
   document.getElementById("box").innerHTML = `
-        <div class="col">
-            <h3 class="w-100"> Hii, you've scored ${right} right out of ${quesLen} </h3>
+        <div>
+            <h3> Hii, you've scored ${right} right out of ${quesLen} </h3>
         </div>
     `;
 };
