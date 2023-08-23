@@ -127,7 +127,7 @@ const loadQuestion = () => {
   }
   resetAll();
   const question = questions[index];
-  console.log(question);
+
   quesBox.textContent = question.q;
   options[0].nextElementSibling.textContent = question.a;
   options[1].nextElementSibling.textContent = question.b;
@@ -139,10 +139,10 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   const ans = getAnswer();
   if (ans == data.correct) {
     right++;
-    console.log(right);
+    // console.log(right);
   } else {
     wrong++;
-    console.log(wrong);
+    // console.log(wrong);
   }
   index++;
   loadQuestion();
